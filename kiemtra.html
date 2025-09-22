@@ -1,0 +1,217 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #6b7280, #3b82f6);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .intro .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 8px;
+            border: 3px solid #007BFF;
+        }
+
+        .intro .profile-img-name {
+            font-size: 0.8rem;
+            color: #ffffff;
+            margin: 0 0 8px;
+            font-style: italic;
+        }
+
+        .intro h1 {
+            margin: 0.3rem 0;
+            font-size: 2.2rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            margin: 0.3rem 0;
+            font-style: italic;
+        }
+
+        .intro .student-id, .intro .class-info, .intro .department-info {
+            font-size: 1rem;
+            font-style: italic;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px 0;
+        }
+
+        .hobbies {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+
+        .hobbies h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .hobby-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hobby {
+            width: 150px;
+            text-align: center;
+            margin-bottom: 15px;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hobby-img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 8px;
+        }
+
+        .links {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .links h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .link-container a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .link-container a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .intro h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro p, .intro .student-id, .intro .class-info, .intro .department-info, .intro .profile-img-name {
+                font-size: 0.9rem;
+            }
+
+            .hobby-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .hobby {
+                width: 100%;
+                max-width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <img src="https://inkythuatso.com/uploads/thumbnails/800/2022/07/21-tranh-phong-canh-mua-xuan-inkythuatso-26-11-57-09.jpg" alt="Ảnh Đại Diện" class="profile-img">
+            <p class="profile-img-name">Tranh Phong Cảnh Mùa Xuân</p>
+            <h1>Phan Ngọc Hùng</h1>
+            <p>Xin chào tất cả mọi người.</p>
+            <p class="student-id">Mã Sinh Viên: 24E1020005</p>
+            <p class="class-info">Lớp: AIK5</p>
+            <p class="department-info">Khoa: Kĩ Thuật và Công Nghệ</p>
+        </div>
+    </header>
+
+    <section class="hobbies">
+        <h2>Sở Thích</h2>
+        <div class="hobby-container">
+            <div class="hobby">
+                <img src="https://cdn.123job.vn/123job/uploads/2021/07/25/2021_07_25______fcd8105b021af2db543b9a6e65d2de15.jpg" alt="Đọc Sách" class="hobby-img">
+                <h3>Đọc Sách</h3>
+                <p>Khám phá tri thức qua từng trang sách.</p>
+            </div>
+            <div class="hobby">
+                <img src="https://www.didongmy.com/vnt_upload/news/02_2023/cach-xem-phim-mien-phi-didongmy.jpg" alt="Xem Phim" class="hobby-img">
+                <h3>Xem Phim</h3>
+                <p>Thư giãn với những bộ phim hấp dẫn.</p>
+            </div>
+            <div class="hobby">
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/b5/c3/ae/b5c3ae0d-6bd3-6ec6-7f13-03d051a5f009/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" alt="Chơi Game" class="hobby-img">
+                <h3>Chơi Game</h3>
+                <p>Giải trí sau giờ học căng thẳng.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="links">
+        <h2>Kết Nối Với Tôi</h2>
+        <div class="link-container">
+            <a href="https://facebook.com/satlcream.157" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://github.com/24e1020005-design" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://zalo.me/0888515706" target="_blank"><i class="fas fa-phone"></i> Zalo</a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Website cá nhân đã được tải thành công.");
+            // Thêm cuộn mượt cho các liên kết anchor
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
